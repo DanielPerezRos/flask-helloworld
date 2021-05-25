@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hola desde template</h1>
+    <h2>{{ message }}</h2>
+    <h2>{{ message2 }}</h2>
+
+    <ul>
+{% for name in names %}
+    <li>{{ name }}</li>
+{% endfor %}
+   </ul>
+
+{% if message %}
+<p>{{ message }}</p>
+{% else %}
+<p>no hay mensaje</p>
+{% endif %}
+</body>
+</html>
